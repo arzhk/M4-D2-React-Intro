@@ -48,7 +48,7 @@ class LatestReleases extends React.Component {
             </select>
           </Row>
         </Container>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mx-0">
           {this.state.bookSet.map((e) => (
             <BookCard img={e.img} title={e.title} category={e.category} price={e.price} />
           ))}

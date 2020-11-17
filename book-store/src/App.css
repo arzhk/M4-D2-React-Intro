@@ -4,13 +4,18 @@ body {
 }
 
 h5 {
-  color: #fff;
+  color: #181818;
 }
 
 footer {
   width: 100%;
-  background-color: #131313;
+  background-color: #0d87d4;
   padding: 20px;
+}
+
+footer ul li a {
+  color: #181818;
+  font-weight: bold;
 }
 
 ul {
