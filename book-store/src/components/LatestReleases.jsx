@@ -29,7 +29,7 @@ class LatestReleases extends React.Component {
         this.setState({ bookSet: History });
         break;
       default:
-        console.log("boo");
+        console.log("Error, book set missing");
     }
   };
 
