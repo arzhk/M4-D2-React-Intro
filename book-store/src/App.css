@@ -1,0 +1,64 @@
+body {
+  background-color: #181818 !important;
+  min-height: 100vh;
+  padding: 0;
+}
+
+h5 {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background-color: #131313;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul li {
+  padding: 10px 0px;
+}
+
+ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.25s ease;
+}
+
+ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+select {
+  padding: 0px 10px;
+}
+
+.navbar {
+  background-color: #131313;
+  height: 100px;
+  position: sticky;
+  top: 0;
+}
+
+.jumbotron {
+  border-radius: 0px !important;
+  padding: 10rem 3rem !important;
+}
+
+#books-container .card {
+  border-radius: 0px;
+  background-color: #131313;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-img {
+  height: 200px;
+  background-size: cover !important;
+}
