@@ -37,7 +37,8 @@ class LatestReleases extends React.Component {
     return (
       <section id="books-container" className="mb-2 py-5">
         <Container>
-          <Row className="mb-5">
+          <Row className="align-items-center mb-5">
+            <p className="font-weight-bold mr-3 mb-0">Change Genre: </p>
             <select onChange={this.updateBooks}>
               <option>Fantasy</option>
               <option>History</option>
@@ -63,11 +64,15 @@ class BookCard extends React.Component {
     return (
       <Card className="mr-3 mb-3" style={{ width: "18rem" }}>
         <div class="card-img" style={{ background: `url(${this.props.img})` }}></div>
-        <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text>{this.props.category}</Card.Text>
-          <Card.Text>{this.props.price}</Card.Text>
-          <Button variant="primary">Buy Now</Button>
+        <Card.Body className="d-flex flex-column justify-content-between">
+          <div>
+            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Text>{this.props.category}</Card.Text>
+          </div>
+          <div className="d-flex flex-column align-items-end">
+            <Card.Text className="font-weight-bold mb-1">£{this.props.price.toFixed(2)}</Card.Text>
+            <Button variant="primary">Buy Now</Button>
+          </div>
         </Card.Body>
       </Card>
     );
